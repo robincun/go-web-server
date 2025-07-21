@@ -135,7 +135,11 @@ func StartServer(customRoutes []CustomRoute) error {
 
 	fmt.Println("Server started listening on port 8080")
 
-	return http.ListenAndServe("localhost:8080", mux)
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+	return http.ListenAndServe(port, mux)
 }
 
 type Session struct {
