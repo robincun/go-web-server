@@ -139,7 +139,7 @@ func StartServer(customRoutes []CustomRoute) error {
 	}
 
 	fmt.Println("Server started listening on port " + port)
-	return http.ListenAndServe(port, mux)
+	return http.ListenAndServe(":"+port, mux)
 }
 
 type Session struct {
