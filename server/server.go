@@ -133,12 +133,12 @@ func StartServer(customRoutes []CustomRoute) error {
 
 	mux.HandleFunc("/", router)
 
-	fmt.Println("Server started listening on port 8080")
-
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
 	}
+
+	fmt.Println("Server started listening on port " + port)
 	return http.ListenAndServe(port, mux)
 }
 
