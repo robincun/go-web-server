@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>401 - Unauthorized</title>
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #374151;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .error-container {
+      background-color: #ffffff;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .error-code {
+      font-size: 6rem;
+      font-weight: 800;
+      color: #dc2626;
+      /* Red color */
+      margin-bottom: 16px;
+      line-height: 1;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.6;
+      color: #4b5563;
+      margin-bottom: 24px;
+    }
+
+    .home-button {
+      background-color: #3b82f6;
+      color: #ffffff;
+      font-weight: 600;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-block;
+      outline: none;
+    }
+
+    .home-button:hover {
+      background-color: #2563eb;
+      transform: translateY(-2px);
+    }
+
+    .home-button:active {
+      background-color: #1d4ed8;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .error-container {
+        padding: 20px;
+      }
+
+      .error-code {
+        font-size: 4rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="error-container">
+    <div class="error-code">401</div>
+    <h2>Unauthorized Access</h2>
+    <p>
+      You do not have permission to view this page. Please ensure you are logged in or have the necessary credentials.
+    </p>
+    <a href="/" class="home-button">Go to Homepage</a>
+  </div>
+</body>
+
+</html>
